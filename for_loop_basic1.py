@@ -18,33 +18,49 @@ step -- optional increment/decrement
 
 
 #Basic - Print all integers from 0 to 150.
-for i in range(1,101):
+for i in range(1,151):
     print(i)
 
 
 
 #Multiples of Five - Print all the multiples of 5 from 5 to 1,000
-for i in range(1,1001,5):
+for i in range(5,1001,5):
     print(i)
 
 
 
 #Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, print "Coding" instead. If divisible by 10, print "Coding Dojo".
 for i in range(1,101):
-    if i % 5 == 0:
+    if i % 5 == 0 and i % 10 !=0:
         print("Coding")
-    
-    if i % 10 == 0:
+    elif i % 10 == 0:
         print("Coding Dojo")
+    else:
+        print(i)
+
+# WRONG ANSWER
+# for i in range(1,101):
+#     str=""
+#     if i % 5 == 0:
+#         print("Coding")
+    
+#     if i % 10 == 0:
+#         print("Coding Dojo")
 
 
 
 #Whoa. That Sucker's Huge - Add odd integers from 0 to 500,000, and print the final sum.
-sum=0
-for i in range(1,500001):
-    if 1 % 2 == 1:
-        sum=sum+i
+sum = 0
+for i in range(1,500000,2):
+    sum += i
 print(sum)
+
+# WRONG ANSWER
+# sum=0
+# for i in range(1,500001):
+#     if 1 % 2 == 1:
+#         sum=sum+i
+# print(sum)
 
 
 
